@@ -1,92 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="./js/script.js"></script>
     <meta charset="UTF-8">
     <title>Skillspage</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/script.js"></script>
+    <style>
+.header-bg{
+    background-color: #808080; 
+    color: black; 
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:gray;
+  color: #fff;
+  padding: 20px;
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.upper-left {
+  margin-bottom: 10px;
+}
+
+.right-section {
+  margin-left: auto;
+}
+
+#logo-F {
+  max-width: 100%;
+}
+footer .media-icons{
+  display: none;
+}
+.media-icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px; 
+}
+    </style>
 </head>
 
 <body>
-    <header>
-        <img id="logo-H" src="image/LOGO.jpg" alt="" height="50" width="60">
-          <nav class="navigation">
-                <a href="./Homepage.html">Home</a>
-                <a href="./Aboutpage.html">About me</a>
-                <a href="./skillspage.html">Skills</a>
-                <a href="./projectpage.html">Project</a>
-                <a href="./contactpage.html">Contact me</a> 
+    <header class="header-bg">
+        <div class="container">
+            <img id="logo-H" src="image/LOGO.jpg" alt="" height="50" width="60">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a href="./Homepage.html" class="navbar-item">Home</a>
+                        <a href="./Aboutpage.html" class="navbar-item">About me</a>
+                        <a href="./skillspage.html" class="navbar-item">Skills</a>
+                        <a href="./projectpage.html" class="navbar-item">Project</a>
+                        <a href="./contactpage.html" class="navbar-item">Contact me</a>
+                    </div>
+                </div>
             </nav>
             <i class="fa fa-bars menu"></i>
-    </header>
-    <main class="main-skills">
-        <table>
-            <thead class="head">
-                <tr>
-                    <th>Programming language </th>
-                    <th>Frameworks</th>
-                    <th>Database</th>
-                </tr>
-                
-            </thead>
-            <tbody class="body">
-                <tr>
-                    <td>java</td>
-                    <td>django</td>
-                    <td>mysql</td>
-                </tr>
-                <tr>
-                    <td>python</td>
-                    <td>react</td>
-                    <td>mongodb</td>
-                </tr>
-                <tr>
-                    <td>c++</td>
-                    <td>angular</td>
-                    <td>nosql</td>
-                </tr>
-
-            </tbody>
-        </table>
-        <table>
-            <thead>
-                <tr>
-                    <th>extracurclar</th>
-                    <th>website development</th>
-                    <th>Design tools</th>
-                </tr>
-                
-    
-            </thead>
-            <tbody>
-                <tr>
-                    <td>cooking</td>
-                    <td>Html</td>
-                    <td>Figma</td>
-                </tr>
-                <tr>
-                    <td>leadership</td>
-                    <td>CSS</td>
-                    <td>drawio</td>   
-                </tr>
-                <tr>
-                    <td>Tutor</td>
-                    <td>javascript</td>
-                    <td>Canva</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="media-icon">
-            <ul class="social-icons">
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://fa-linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>  
-            </ul>
         </div>
-        
+    </header>
+
+    <main class="section main-skills">
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Programming Language</th>
+                        <th>Frameworks</th>
+                        <th>Database</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Java</td>
+                        <td>Django</td>
+                        <td>MySQL</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>React</td>
+                        <td>MongoDB</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>Angular</td>
+                        <td>NoSQL</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Extracurricular</th>
+                        <th>Website Development</th>
+                        <th>Design Tools</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cooking</td>
+                        <td>HTML</td>
+                        <td>Figma</td>
+                    </tr>
+                    <tr>
+                        <td>Leadership</td>
+                        <td>CSS</td>
+                        <td>Drawio</td>
+                    </tr>
+                    <tr>
+                        <td>Tutor</td>
+                        <td>JavaScript</td>
+                        <td>Canva</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="media-icon">
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://fa-linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </main>
-    <footer class="footer">
+    <footer class="section footer-bg">
         <div class="left-section">
             <div class="upper-left">
                 <img id="logo-F" src="image/LOGO.jpg" alt="" height="50" width="60">
@@ -109,7 +157,12 @@
                 <li><a href="https://fa-linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>  
             </ul>
-        </div>
+        </div> 
     </footer>
 </body>
+
+</html>
+
+</body>
+
 </html>

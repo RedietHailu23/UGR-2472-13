@@ -4,21 +4,124 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <title>Projectpage</title>
-    <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/script.js"></script>
+    <style>
+.header-bg {
+    background-color: #808080; 
+    color: black; 
+}
+
+.footer-bg {
+    background-color: gray; 
+    color: #ffffff;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:gray;
+  color: #fff;
+  padding: 20px;
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.upper-left {
+  margin-bottom: 10px;
+}
+
+.right-section {
+  margin-left: auto;
+}
+
+#logo-F {
+  max-width: 100%;
+}
+footer .media-icons{
+  display: none;
+}
+.media-icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px; 
+}
+.main-project {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    position: relative; 
+    color: black;
+    background-color: #e6e6e6;
+}
+
+.rental,
+.insurance,
+.pharmacy {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:gray;
+  color: #fff;
+  padding: 20px;
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.upper-left {
+  margin-bottom: 10px;
+}
+
+.right-section {
+  margin-left: auto;
+}
+
+#logo-F {
+  max-width: 100%;
+}
+.footer .media-icons{
+  display: none;
+}
+
+    </style>
 </head>
 
 <body>
-    <header>
-        <img id="logo-H" src="image/LOGO.jpg" alt="" height="50" width="60">
-          <nav class="navigation">
-                <a href="./Homepage.html">Home</a>
-                <a href="./Aboutpage.html">About me</a>
-                <a href="./skillspage.html">Skills</a>
-                <a href="./projectpage.html">Project</a>
-                <a href="./contactpage.html">Contact me</a> 
-            </nav>
-            <i class="fa fa-bars menu"></i>
+    <header class="header-bg">
+        <section class="section">
+            <div class="container">
+                <img src="image/LOGO.jpg" alt="" height="50" width="60">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-menu">
+                        <div class="navbar-start">
+                            <a href="./Homepage.html" class="navbar-item">Home</a>
+                            <a href="./Aboutpage.html" class="navbar-item">About me</a>
+                            <a href="./skillspage.html" class="navbar-item">Skills</a>
+                            <a href="./projectpage.html" class="navbar-item">Project</a>
+                            <a href="./contactpage.html" class="navbar-item">Contact me</a>
+                        </div>
+                    </div>
+                </nav>
+                <i class="fa fa-bars menu"></i>
+            </div>
+        </section>
     </header>
     <main class="main-project">
         <div class="rental">
@@ -59,7 +162,7 @@
             </ul>  
         </div>
     </main>
-    <footer class="footer">
+    <footer class="section footer-bg">
         <div class="left-section">
             <div class="upper-left">
                 <img id="logo-F" src="image/LOGO.jpg" alt="" height="50" width="60">
@@ -82,8 +185,7 @@
                 <li><a href="https://fa-linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>  
             </ul>
-        </div>  
-        
+        </div> 
     </footer>
 </body>
 </html>
